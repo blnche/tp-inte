@@ -107,6 +107,9 @@ main section:first-of-type {
 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
 }
 
 article h3 {
@@ -122,9 +125,10 @@ article img {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
 
-    height: 9rem;
-    width: 100%;
-    object-fit: contain;
+    height: auto;
+    width: 18rem;
+
+    border-radius: 0.5rem;
 }
 
 button {
