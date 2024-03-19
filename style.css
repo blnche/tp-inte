@@ -126,7 +126,8 @@ article img {
     width: 100%;
     object-fit: contain;
 }
-article button {
+
+button {
     grid-column: 2 / span 1;
 
     border-radius: 0.5rem;
@@ -137,27 +138,44 @@ article button {
     width: fit-content;
 
 }
-article button:hover {
+button:hover {
     border: 1px solid var(--green-8);
     background-color: var(--green-10);
 }
 
 .contact-form {
     margin-block: 4rem;
-    padding: 1rem 2rem;    
+    padding: 1rem 2rem;  
+    
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contact-form form {
+    align-self: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 .contact-form form > * {
     width: fit-content;
 }
 
-input, textarea {
+.contact-form form button {
+    align-self: center;
+}
+
+
+label {
+    text-decoration: underline;
+    text-decoration-color: var(--green-10);
+    padding: 0.5rem;
+}
+
+input, textarea, select {
     border: 2px solid var(--green-6);
     background-color: var(--green-4);
     border-radius: 0.5rem;
