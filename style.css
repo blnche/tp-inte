@@ -1,0 +1,133 @@
+/* FONT FACE IMPORTS*/
+@font-face {
+    font-family: 'Atmos';
+    src: url(/Atmos.ttf);
+}
+@font-face {
+    font-family: 'PP Neue Machinima';
+    src: url(/PPNeueMontreal-Medium.otf);
+}
+
+/* COLOURS IMPORTS */
+@import '@radix-ui/colors/green.css';
+
+html {
+    background-color: var(--green-1);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-family: PP Neue Machinima;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-image: url(/the-blowup-Y-rORcqMiqQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0px 10px 35px 3px rgba(0,0,0,0.45);
+
+    height: 15rem;
+
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: Atmos;
+    font-size: 3rem;
+
+    margin: 4rem 1rem 2rem 1rem;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    padding: 1.5rem;
+}
+
+header nav ul li a {
+    color:black;
+    font-size: 1.25rem;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+header nav ul li .active {
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.636);
+    color:white;
+}
+
+main h2 {
+    font-size: 4rem;
+    text-align: center;
+
+    padding: 2rem;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article h3 {
+    grid-column: 1 / span 1;
+
+    font-size: 2.5rem;
+    padding-block: 2rem;
+}
+article p {
+    grid-column: 1 / span 1;
+}
+article img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+
+    height: 9rem;
+    width: 100%;
+    object-fit: contain;
+}
+article button {
+    grid-column: 2 / span 1;
+}
+
+footer {
+    background-color: var(--green-8);
+    width: 100%;
+    padding-block: 3rem;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+}
